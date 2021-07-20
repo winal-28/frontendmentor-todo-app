@@ -1,9 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
-  background: hsl(235, 21%, 11%);
+  display: flex;
+  height: 100;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../images/bg-desktop-dark.jpg") no-repeat;
+  background-color: hsl(235, 21%, 11%);
+  color: white;
+}
+
+.todoContainer {
+  background: #19dafa;
+  width: 500px;
+  height: 500px;
+  margin: 70px auto;
+  .title {
+    letter-spacing: 10px;
+    font-size: 2.5rem;
+  }
 }
