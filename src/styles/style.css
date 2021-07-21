@@ -30,9 +30,32 @@ body {
   width: 500px;
   height: 500px;
   margin: 70px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.todoContainer .title {
+.todoContainer .todoHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 8%;
+  margin-bottom: 8%;
+  background: red;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.todoContainer .todoHeader .title {
   letter-spacing: 10px;
   font-size: 2.5rem;
 }
