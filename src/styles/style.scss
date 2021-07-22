@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
 @import "./variables";
+@import "./addTodo";
+@import "./todoHeader";
 
 * {
   padding: 0;
@@ -21,48 +23,10 @@ body {
 }
 
 .todoContainer {
-  background: #19dafa;
+  // background: #19dafa;
   width: 500px;
   height: 500px;
   margin: 70px auto;
   display: flex;
   flex-direction: column;
-}
-
-.todoHeader {
-  display: flex;
-  width: 100%;
-  height: 8%;
-  margin-bottom: 8%;
-  background: red;
-  align-items: center;
-  justify-content: space-between;
-  .title {
-    letter-spacing: 10px;
-    font-size: 2.5rem;
-  }
-}
-
-.addTodo {
-  width: 100%;
-  background: hsl(235, 24%, 19%);
-  height: 10%;
-  margin-bottom: 8%;
-  display: flex;
-  align-items: center;
-  border-radius: $borderRadius;
-  .submit {
-    width: 10%;
-  }
-  .todoInput {
-    height: 100%;
-    width: 90%;
-    background: hsl(235, 24%, 19%);
-    border: none;
-    outline: none;
-    border-radius: $borderRadius;
-    color: whitesmoke;
-    font-weight: 200;
-    font-size: 1.1rem;
-  }
 }
