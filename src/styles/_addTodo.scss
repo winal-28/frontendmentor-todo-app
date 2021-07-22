@@ -26,3 +26,12 @@
     font-size: 1.1rem;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .addTodo {
+    height: 1%;
+    .todoInput {
+      padding-right: 15px;
+    }
+  }
+}

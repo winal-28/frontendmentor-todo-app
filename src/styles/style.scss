@@ -3,6 +3,7 @@
 @import "./variables";
 @import "./addTodo";
 @import "./todoHeader";
+@import "./checkBox";
 
 * {
   padding: 0;
@@ -24,9 +25,17 @@ body {
 
 .todoContainer {
   // background: #19dafa;
-  width: 500px;
-  height: 500px;
+  min-width: 500px;
+  width: 35%;
+  min-height: 250px;
   margin: 70px auto;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .todoContainer {
+    min-width: 260px;
+    min-height: 500px;
+  }
 }
