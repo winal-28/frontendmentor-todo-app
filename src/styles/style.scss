@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
+// measurements
+$borderRadius: 5px;
+
+// primary colors
+
+$brightBlue: hsl(220, 98%, 61%);
+$checkBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+// dark theme
+$VeryDarkBlue: hsl(235, 36%, 58%);
+$VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+$LightGrayishBlue: hsl(234, 39%, 85%);
+$LightGrayishBlueHover: hsl(236, 33%, 92%);
+$DarkGrayishBlue: hsl(234, 11%, 52%);
+$VeryDarkGrayisBlue: hsl(233, 14%, 35%);
+$VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+
+// light theme
+
+$VeryLightGray: hsl(0, 0%, 98%);
+$VeryLightGrayishBlue: hsl(236, 33%, 92%);
+$LightGrayishBlue: hsl(233, 11%, 84%);
+$DarkGrayishBlue: hsl(236, 9%, 61%);
+$VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+
 * {
   padding: 0;
   margin: 0;
@@ -25,17 +50,42 @@ body {
   margin: 70px auto;
   display: flex;
   flex-direction: column;
-  .todoHeader {
-    display: flex;
-    width: 100%;
-    height: 8%;
-    margin-bottom: 8%;
-    background: red;
-    align-items: center;
-    justify-content: space-between;
-    .title {
-      letter-spacing: 10px;
-      font-size: 2.5rem;
-    }
+}
+
+.todoHeader {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  margin-bottom: 8%;
+  background: red;
+  align-items: center;
+  justify-content: space-between;
+  .title {
+    letter-spacing: 10px;
+    font-size: 2.5rem;
+  }
+}
+
+.addTodo {
+  width: 100%;
+  background: hsl(235, 24%, 19%);
+  height: 10%;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+  border-radius: $borderRadius;
+  .submit {
+    width: 10%;
+  }
+  .todoInput {
+    height: 100%;
+    width: 90%;
+    background: hsl(235, 24%, 19%);
+    border: none;
+    outline: none;
+    border-radius: $borderRadius;
+    color: whitesmoke;
+    font-weight: 200;
+    font-size: 1.1rem;
   }
 }

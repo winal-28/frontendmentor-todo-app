@@ -39,7 +39,7 @@ body {
           flex-direction: column;
 }
 
-.todoContainer .todoHeader {
+.todoHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,8 +55,38 @@ body {
           justify-content: space-between;
 }
 
-.todoContainer .todoHeader .title {
+.todoHeader .title {
   letter-spacing: 10px;
   font-size: 2.5rem;
+}
+
+.addTodo {
+  width: 100%;
+  background: #25273c;
+  height: 10%;
+  margin-bottom: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.addTodo .submit {
+  width: 10%;
+}
+
+.addTodo .todoInput {
+  height: 100%;
+  width: 90%;
+  background: #25273c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=style.css.map */
