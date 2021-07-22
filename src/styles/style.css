@@ -1,4 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+.checkbox {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox:checked ~ .checkmark {
+  background-color: #19dafa !important;
+}
+
+.checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark {
+  margin: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #25273c;
+  border: solid 1px #484b6a;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .addTodo {
   width: 100%;
   background: #25273c;
@@ -12,27 +49,17 @@
           align-items: center;
   border-radius: 5px;
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.addTodo .checkbox {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.addTodo .checkmark {
-  margin: 20px;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  background-color: #25273c;
-  border: solid 1px #484b6a;
+.addTodo:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
 }
 
 .addTodo .todoInput {
-  padding-right: 10px;
+  padding-right: 20px;
   height: 100%;
   width: 90%;
   background: #25273c;
@@ -62,6 +89,21 @@
 .todoHeader .title {
   letter-spacing: 10px;
   font-size: 2.5rem;
+  pointer-events: none;
+}
+
+.todoHeader .toggleTheme {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.todoHeader .toggleTheme:hover {
+  background-color: rgba(255, 255, 255, 0.164);
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
 }
 
 * {
